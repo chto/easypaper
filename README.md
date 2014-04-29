@@ -1,7 +1,9 @@
-Given a LaTeX document, compile a rich HTML document.  Current goal is to have three main functions:
+Given a LaTeX document, compile a rich HTML document.  See test_website/test.html for a continually-updated proof of concept.
 
-1. Easy-to-follow citation links
-..* Trigger: Click or hover over bibliographic reference (e.g. Smith and Bob 2001)
+The current goal is to have three main functions:
+
+1. **Easy-to-follow citation links**
+.. * Trigger: Click or hover over bibliographic reference (e.g. Smith and Bob 2001)
 ..* Action:  Tooltip with bibliographic info, optional abstract, and link to bibliographic entry (e.g. in ADS or arXiv) is displayed.
 1. Easy-to-reference figures, equations, and tables
 ..* Trigger: Click or hover over figure or equation reference.
