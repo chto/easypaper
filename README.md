@@ -13,3 +13,7 @@ The current goal is to have three main functions:
 1. **Easy lookup of jargon**
   - _Trigger_: Click or hover over "jargon"
   - _Action_:  Tooltip with short definition (pulled from some yet-unknown database) and links for more info, or a search link
+
+Gratitude:
+- PDF.js (v1.0.275)
+- [https://github.com/hubgit/hubgit.github.com/tree/master/2011/11/pdftotext]
