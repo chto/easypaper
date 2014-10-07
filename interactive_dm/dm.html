@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mass Interpolation Schemes</title>
+
+		<!-- d3 and jQuery libs -->
+		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<!--  MathJax lib and configuration -->
+		<script type="text/javascript" 
+			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+		</script>
+		<script type="text/javascript" src="mathconfig.js"></script>
+
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+		<!-- Global stylesheet for academic article template -->
+		<link rel="stylesheet" href="article.css">
+	</head>
+	<body>
+	
+		<nav id="navbar">
+			<ul>
+				<li>this</li>
+				<li>is</li>
+				<li>a</li>
+				<li>navbar</li>
+			</ul>
+		</nav>
+
+		<div class="header">
+
+			<div id="title">
+				An HTML/CSS template for academic articles with interactive figures
+			</div>
+
+			<div id="author-list">
+				
+					<div class="author">Devon Powell</div>
+					<div class="author">John Doe</div>
+					<div class="author">Jane Doe</div>
+					<!--<div class="author">Mister Rogers</div>-->
+				
+			</div>
+
+
+			<div id="abstract">
+				<hr>
+
+				<div id="abstract-title">
+					Abstract
+				</div>
+
+				<p>
+				We derive new formulae to calculate volumes, moments, and polynomial integrals up to
+				quadratic order over polytopes in two and three dimensions. In principle, our method can
+				be used to derive analogous formulae for polynomials of any order in any dimensionality.
+				By successively applying the divergence theorem, we reduce the dimensionality of the
+				integrals from volumes to areas to lines to points. We arrive at closed-form expressions
+				involving data local to the vertices that define the polytope, with no need for the
+			entire polytope to be explicitly represented all at once. In addition, there are no
+			latent assumptions regarding the convexity or connectedness of the domain. The form of
+			these expressions is particularly well-suited to software implementations.
+			</p>
+
+			<p>
+			We apply these formulae to the case of voxelizing polytopes using an exact
+			volume-sampling approach, including the voxelization of polytopes with linearly and
+			quadratically varying densities. We take particular care to avoid loss of numerical
+			precision, achieving machine precision on a per-voxel level. We also give a brief
+			performance analysis, comparing our volume-sampling method to point multisampling, as
+			well as scaling in shared-memory parallelization.
+			</p>
+
+			<p>
+			Noting that this method is useful for exact remeshing operations on arbitrary grid
+			topologies, we finally discuss a number of further application areas such as Arbitrary
+			Lagrangian-Eulerian hydrodynamics, projecting three dimensional manifolds from six
+			dimensional phase space to configuration space, and computer graphics. 
+			</p>
+			<hr>
+			</div>
+
+
+	
+		</div>
+	
+		<h2><span class="section-number">1&nbsp;&nbsp;</span>Introduction</h2>
+
+		<p>
+		I am by birth a Genevese, and my family is one of the most distinguished of that republic.
+		My ancestors had been for many years counsellors and syndics, and my father had filled
+		several public situations with honour and reputation. He was respected by all who knew him
+		for his integrity and indefatigable attention to public business. He passed his younger days
+		perpetually occupied by the affairs of his country; a variety of circumstances had prevented
+		his marrying early, nor was it until the decline of life that he became a husband and the
+		father of a family.
+	</p>
+
+		<p>The annihilation rate of dark matter can be written in terms of the local velocity
+		distrubution $f(v)$ as
+		\begin{equation}
+			\Phi = \frac{1}{2} \int \int \, f(v_i, x) \, f(v_j, x) \, 
+				\sigma(v_{ij}) \, v_{ij} \, \mathrm{d}v_i \, \mathrm{d}v_j
+		\end{equation}	
+
+		where $v_{ij} = |v_i - v_j|$ is the relative velocity.
+		
+		</p>
+
+		<h2><span class="section-number">2&nbsp;&nbsp;</span>Another section</h2>
+
+		<h3><span class="section-number">2.1&nbsp;&nbsp;</span>A subsection</h3>
+		<p>
+		As the circumstances of his marriage illustrate his character, I cannot refrain from
+		relating them. One of his most intimate friends was a merchant who, from a flourishing
+		state, fell, through numerous mischances, into poverty. This man, whose name was Beaufort,
+		was of a proud and unbending disposition and could not bear to live in poverty and oblivion
+		in the same country where he had formerly been distinguished for his rank and magnificence.
+		Having paid his debts, therefore, in the most honourable manner, he retreated with his
+		daughter to the town of Lucerne, where he lived unknown and in wretchedness. My father loved
+		Beaufort with the truest friendship and was deeply grieved by his retreat in these
+		unfortunate circumstances. He bitterly deplored the false pride which led his friend to a
+		conduct so little worthy of the affection that united them. He lost no time in endeavouring
+		to seek him out, with the hope of persuading him to begin the world again through his credit
+		and assistance.
+	</p>
+
+
+		<figure style="width: 60%;">
+			<div id="shapeschemes">
+				<link rel="stylesheet" href="shapeschemes.css">
+				<script src="shapeschemes.js"></script>
+			</div>
+			<figcaption><span class="figure-number">Figure 1 &mdash;&nbsp;</span> Mass
+			interpolation schemes. Each cell of the deformable grid represents an element of
+			constant mass, so that smaller mass elements imply higher density.</figcaption>
+		</figure>
+
+		<p>
+		Beaufort had taken effectual measures to conceal himself, and it was ten months before my
+		father discovered his abode. Overjoyed at this discovery, he hastened to the house, which
+		was situated in a mean street near the Reuss. But when he entered, misery and despair alone
+		welcomed him. Beaufort had saved but a very small sum of money from the wreck of his
+		fortunes, but it was sufficient to provide him with sustenance for some months, and in the
+		meantime he hoped to procure some respectable employment in a merchant’s house. The interval
+		was, consequently, spent in inaction; his grief only became more deep and rankling when he
+		had leisure for reflection, and at length it took so fast hold of his mind that at the end
+		of three months he lay on a bed of sickness, incapable of any exertion.
+	</p>
+
+		<p>
+		His daughter attended him with the greatest tenderness, but she saw with despair that their
+		little fund was rapidly decreasing and that there was no other prospect of support. But
+		Caroline Beaufort possessed a mind of an uncommon mould, and her courage rose to support her
+		in her adversity. She procured plain work; she plaited straw and by various means contrived
+		to earn a pittance scarcely sufficient to support life.
+	</p>
+
+		<p>
+		Several months passed in this manner. Her father grew worse; her time was more entirely
+		occupied in attending him; her means of subsistence decreased; and in the tenth month her
+		father died in her arms, leaving her an orphan and a beggar. This last blow overcame her,
+		and she knelt by Beaufort’s coffin weeping bitterly, when my father entered the chamber. He
+		came like a protecting spirit to the poor girl, who committed herself to his care; and after
+		the interment of his friend he conducted her to Geneva and placed her under the protection
+		of a relation. Two years after this event Caroline became his wife.
+	</p>
+
+		<p>
+		There was a considerable difference between the ages of my parents, but this circumstance
+		seemed to unite them only closer in bonds of devoted affection. There was a sense of justice
+		in my father’s upright mind which rendered it necessary that he should approve highly to
+		love strongly. Perhaps during former years he had suffered from the late-discovered
+		unworthiness of one beloved and so was disposed to set a greater value on tried worth. There
+		was a show of gratitude and worship in his attachment to my mother, differing wholly from
+		the doting fondness of age, for it was inspired by reverence for her virtues and a desire to
+		be the means of, in some degree, recompensing her for the sorrows she had endured, but which
+		gave inexpressible grace to his behaviour to her. Everything was made to yield to her wishes
+		and her convenience. He strove to shelter her, as a fair exotic is sheltered by the
+		gardener, from every rougher wind and to surround her with all that could tend to excite
+		pleasurable emotion in her soft and benevolent mind. Her health, and even the tranquillity
+		of her hitherto constant spirit, had been shaken by what she had gone through. During the
+		two years that had elapsed previous to their marriage my father had gradually relinquished
+		all his public functions; and immediately after their union they sought
+	</p>
+	</body>
+</html>
+
+

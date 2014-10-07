@@ -1,0 +1,118 @@
+/*
+ * Stylesheet for an academic article
+ */
+
+html { 
+	width: 100%; height: 100%; 
+	background-color: lightgray;
+}
+
+#navbar {
+	position: fixed;
+	background-color: gray;
+	opacity: 0.90;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	top: 0; left: 0;
+	z-index: 99;	
+}
+#navbar ul {
+	float: right; 
+}
+#navbar li {
+	display: inline;
+	padding: 10px 20px;
+	font-size 110%;
+}
+
+#navbar li:hover {
+	background-color: lightgray;
+	opacity: 100%;
+}
+
+div.author {
+	/*border: solid black 2px;*/
+	
+	display: inline-block;
+
+	text-align: center;
+	width: 49%;
+	/*height: 40px;*/
+	padding: 40px 0;
+	/*margin: 40px auto;*/
+}
+
+/*
+ * Body restricted to take up a finite width of the viewport.
+ */
+body {
+	position: absolute; 
+	width: 50%; 
+	margin-left: 15%; 
+	margin-right: 15%; 
+	padding: 10%;
+	background-color: white;
+	font-size: 12pt;
+	font-family: 'Droid Serif', serif;
+}
+
+div.header {
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+}
+#title {
+	font-size: 200%;
+	font-weight: bold;
+	margin: 20px 0;
+}
+#author-list {
+	font-size: 120%;
+	margin: 50px;
+}
+#author-list li {
+	display: inline-block;
+	margin: 20px;
+}
+#abstract {
+	margin: 40px 0;
+}
+#abstract-title {
+	text-align: left;
+	margin: 20px 0;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+h2 {
+	margin-top: 50px;
+	font-size: 150%;
+}
+h3 {
+	font-size: 130%;
+}
+
+span.section-number {
+
+}
+
+p {
+	line-height: 150%;
+	text-align: justify;
+}
+
+/*
+ * Figure and captions.
+ */
+figure {
+	margin: 40px auto;
+}
+figcaption {
+	text-align: justify;
+	margin-top: 10px; 
+	font-size: 90%; /* Of the main text size */
+}
+span.figure-number {
+	font-weight: bold;
+}
