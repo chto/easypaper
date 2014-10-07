@@ -1,4 +1,4 @@
-Ideas for a more effective and convenient way of viewing scientific literature online.  View `demo_html/test.html` for a proof of concept.
+Ideas for a more effective and convenient way of viewing scientific literature online.  View proof of concept [here](demo_html/test.html).
 
 Current goals:
 
